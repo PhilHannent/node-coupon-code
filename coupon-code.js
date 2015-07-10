@@ -65,7 +65,7 @@ module.exports.generate = function(opts) {
                 part = part + checkDigitAlg1(part, i+1);
                 parts.push(part);
             }
-        } while (!exports.checkForBadWords(parts.join('')))
+        } while (exports.checkForBadWords(parts.join('')))
     }
 
     return parts.join('-');
